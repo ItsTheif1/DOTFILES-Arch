@@ -45,14 +45,3 @@ i3 gaps is set up for a lightweight and minimal dude ( i didnt finish my basic a
 - Super + L: lock screen
 
 ---
-
-## KDE Plasma
-
-KDE Plasma use if ur begineer i think we all know what this is uhh its finished i just got to go get it uhh wait cus im lazu
----
-
-## i3 gaps
-
-i3 gaps is set up for a lightweight and minimal dude ( i didnt finish my basic ahh thing
-
----
