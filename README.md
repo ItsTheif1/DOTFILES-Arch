@@ -1,6 +1,7 @@
 # DOTFILES-Arch
 
 My Linux dotfiles for Hyprland, KDE Plasma, and i3 gaps.(shortcuts at bottom)
+I WILL BECOME BETTER AT RICING JUST TRUST ME
 
 This repository contains my personal configuration files and setup notes for:
 - Hyprland
@@ -15,7 +16,7 @@ https://github.com/Abhinavexists/kitty_config
 
 ## Hyprland
 
-The ricing windowmanage alot of people use it because its easy to rice and yeah idk what else u want me to say:Hyprland:
+The ricing window manager alot of people use it because its easy to rice and yeah idk what else u want me to say
 ![Hyprland Showcase](https://raw.githubusercontent.com/ItsTheif1/DOTFILES-Arch/main/hyprland/Showcase.png)
 
 ## KDE Plasma
