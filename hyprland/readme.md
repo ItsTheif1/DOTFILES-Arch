@@ -13,4 +13,4 @@ uhh idrk what this keeps but yeah i ahve Commmunity colors it inst nothing speci
      (WIDGETS AUTO OFFF) 
      (bar auto off){fix: turn it on in super z settings then bar}
 
-/hyprland/Showcase.png
+{https://raw.githubusercontent.com/ItsTheif1/DOTFILES-Arch/def7069d4e050fe384ab0518782b1e92f9614931/hyprland/Showcase.png}
