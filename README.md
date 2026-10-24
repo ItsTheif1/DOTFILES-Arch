@@ -10,4 +10,15 @@ my kitty config is from https://github.com/Abhinavexists/kitty_config
 
 
 
+
+
+
+
+
+
+
+
+
+HYPRLAND SHOWCASE
+
 ![Hyprland Showcase](https://raw.githubusercontent.com/ItsTheif1/DOTFILES-Arch/main/hyprland/Showcase.png)
