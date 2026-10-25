@@ -38,12 +38,10 @@ local menu = "hyprlauncher"
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 
------------------------
+
+----------------------
 ---- LOOK AND FEEL ----
------------------------
------------------------
----- LOOK AND FEEL ----
------------------------
+----------------------
 
 hl.config({
     general = {
@@ -63,6 +61,8 @@ hl.config({
     },
 
     decoration = {
+        dim_special = 0.5,
+
         rounding = 10,
         rounding_power = 2,
 
@@ -78,6 +78,7 @@ hl.config({
 
         blur = {
             enabled = true,
+            special = true,
             size = 3,
             passes = 1,
             vibrancy = 0.1696,
@@ -87,7 +88,9 @@ hl.config({
     animations = {
         enabled = true,
     },
-}) 
+})
+
+
   -------------------
 ---- ANIMATIONS -----
 ---------------------
@@ -320,20 +323,35 @@ hl.device({
 
 local mainMod = "SUPER"
 
--- Launch terminal
+-- Open Noctalia Settings with SUPER + Z
+hl.bind(
+    mainMod .. " + Z",
+    hl.dsp.exec_cmd("noctalia msg settings-toggle")
+)
+
+-- Launch terminalhow to insta
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("kitty"))
 
 -- Close active window
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 
--- Application launcher
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("hyprlauncher"))
+-- Open Noctalia launcher with SUPER + SPACE
+hl.bind(
+    mainMod .. " + SPACE",
+    hl.dsp.exec_cmd("noctalia msg panel-toggle launcher")
+)
+
+
+hl.bind("SUPER + S", hl.dsp.workspace.toggle_special("magic"))
+hl.bind("SUPER + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
+
+
 
 -- File manager
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("dolphin"))
 
 -- Exit Hyprland
-hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("hyprctl dispatch exit"))
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("ctl dispatch exit"))
 
 -- Toggle floating
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
@@ -454,3 +472,12 @@ hl.window_rule({
     move = "20 monitor_h-120",
     float = true,
 })
+
+---------------------
+---- AUTOSTART -----
+---------------------
+
+hl.on("hyprland.start", function()
+    hl.exec_cmd("noctalia")
+end)
+
